@@ -8,7 +8,7 @@
     <select name="restaurant" class="form-control">
       <option>Select a Restaurant</option>
       <% for (let restaurant of restaurants) { %>
-        <option <%= (restaurant === formData.restaurant) && 'selected' %> value="<%= restaurant %>"><%= restaurant %></option>
+        <option <%= (restaurant === formData.restaurants) && 'selected' %> value="<%= restaurant %>"><%= restaurant %></option>
       <% } %>
     </select>
   </div>

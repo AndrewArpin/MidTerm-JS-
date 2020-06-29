@@ -10,6 +10,12 @@ exports.new = (req, res) => {
 
 exports.create = (req, res, next) => {
   // add the authentication logic here
+  passport.authenticate('local', {
+    successRedirect: '/reservations',
+    successFlash: 'Loged In',
+    failureRedirect: '/login',
+    failureFlash: 'Invaild credentails'
+  })(req, res, next);
 };
 
 exports.delete = (req, res) => {
