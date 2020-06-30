@@ -2,7 +2,6 @@
 const viewPath = 'reservations';
 const User = require('../models/user');
 const Reservation = require('../models/reservation');
-//const restaurants = ['Kelseys', 'Montanas', 'Outbacks', 'Harveys', 'Swiss Chalet'];
 
 exports.index = async (req, res) => {
     try{ 

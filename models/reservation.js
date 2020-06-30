@@ -23,7 +23,7 @@ const ReservationSchema = new mongoose.Schema({
           default: 'Kelseys'
       },
       dateAndTime: {
-          type: String,      
+          type: Date,      
           required: false  
       }
 });
